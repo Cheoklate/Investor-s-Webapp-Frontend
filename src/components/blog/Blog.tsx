@@ -30,29 +30,32 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-  title: "Title of a longer featured blog post",
+  title: "Famous Volatility ETFs Are Back After a Wild Week on Wall Street",
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: "https://source.unsplash.com/random?wallpapers",
+    "Funds known as UVIX and SVIX surf huge stock-market moves. Yet watchdogs are mulling tough new rules for complex products",
+  image:
+    "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iorw65dsw498/v0/-1x-1.jpg",
   imageText: "main image description",
   linkText: "Continue reading…",
 };
 
 const featuredPosts = [
   {
-    title: "Featured post",
-    date: "Nov 12",
+    title: "Hong Kongs Next Leader Lee Seek’s Better Integration With China",
+    date: "May 8, 2022, 5:05 PM GMT+8",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
-    image: "https://source.unsplash.com/random?wallpapers",
+      "Chief executive-elect says security will be his top priority. Former police official’s election criticized by EU, activists",
+    image:
+      "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i0jbLCGjpd9s/v1/-1x-1.jpg",
     imageLabel: "Image Text",
   },
   {
-    title: "Post title",
+    title: "Apple Keeps Its Tap-to-Pay Feature to Itself to Protect Revenue",
     date: "Nov 11",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
-    image: "https://source.unsplash.com/random?wallpapers",
+      "Apple’s latest antitrust battle is all about Apple Pay and how the company reserves the tap-to-pay feature for its own service.",
+    image:
+      "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iYUpNISYottk/v1/-1x-1.jpg",
     imageLabel: "Image Text",
   },
 ];
