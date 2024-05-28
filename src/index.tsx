@@ -16,7 +16,25 @@ document.body.appendChild(rootElement);
 const root = createRoot(rootElement);
 
 root.render(
-  <React.StrictMode>
-    <Homepage />
-  </React.StrictMode>
-);  
+  <BrowserRouter>
+    {/* <Suspense
+      fallback={
+        <div>
+          <Backdrop
+            sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            open={open}
+          >
+            <CircularProgress color="inherit" />  
+          </Backdrop>
+        </div>
+      }
+    > */}
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="signup" element={<SignUpPage />} />
+        <Route path="signin" element={<SignInPage />} />
+        <Route path="dashboard" element={<Dashboard />} />
+      </Routes>
+    {/* </Suspense> */}
+  </BrowserRouter>
+);
