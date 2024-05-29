@@ -5,6 +5,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import { useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
   sections: ReadonlyArray<{
@@ -15,6 +16,11 @@ interface HeaderProps {
 }
 
 export default function Header(props: HeaderProps) {
+  const navigate = useNavigate()
+  const routeChange = () => {
+    const path = 'signin'
+    navigate(path)
+  }
   const { sections, title } = props;
 
   return (
@@ -34,7 +40,7 @@ export default function Header(props: HeaderProps) {
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <Button variant="outlined" size="small">
+        <Button onClick={routeChange}variant="outlined" size="small">
           Sign up
         </Button>
       </Toolbar>
